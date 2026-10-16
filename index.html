@@ -247,11 +247,15 @@ body{overflow-x:hidden}
 .sgs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media(max-width:560px){.sgs{grid-template-columns:1fr}}
 .sg{padding:20px;border:2px solid rgba(252,232,119,.45);border-radius:18px;transition:transform .25s,border-color .25s,background .25s}
-.sg:hover{transform:translateY(-4px);border-color:var(--y);background:rgba(252,232,119,.06)}
-.sg h4{font:800 20px 'Syne',sans-serif;letter-spacing:-.02em;color:#fff;margin-bottom:12px}
-.sg h4 span{display:block;font:500 10.5px 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--y);opacity:.7;margin-bottom:4px}
+.sg:hover{transform:translateY(-4px);border-color:var(--y);background:var(--y)}
+.sg:hover h4{color:var(--k)}
+.sg:hover h4 span{color:var(--k)}
+.sg:hover .chips span{border-color:var(--k);color:var(--k)}
+.sg:hover .chips span:hover{background:var(--k);color:var(--y)}
+.sg h4{font:800 20px 'Syne',sans-serif;letter-spacing:-.02em;color:#fff;margin-bottom:12px;transition:color .25s}
+.sg h4 span{display:block;font:500 10.5px 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--y);opacity:.7;margin-bottom:4px;transition:color .25s}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
-.chips span{font:500 12px 'JetBrains Mono',monospace;padding:4px 11px;border:1.5px solid var(--y);border-radius:30px;transition:background .2s,color .2s}
+.chips span{font:500 12px 'JetBrains Mono',monospace;padding:4px 11px;border:1.5px solid var(--y);border-radius:30px;transition:background .2s,color .2s,border-color .2s}
 .chips span:hover{background:var(--y);color:var(--k)}
 .cstat{margin-top:16px;padding:18px 22px;border-radius:18px;background:var(--y);color:var(--k);display:flex;align-items:center;gap:16px}
 .cstat b{font:800 clamp(36px,4vw,52px) 'Syne',sans-serif;letter-spacing:-.05em;line-height:1}
